@@ -1,0 +1,13 @@
+# built application files
+*.apk
+
+# Java class files
+*.class
+
+# generated files
+build/
+.gradle/
+
+# Local configuration file
+local.properties
+
