@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">onWeekdays pro Muzei</string>
-    <string name="source_name">onWeekdays pro Muzei</string>
-    <string name="source_description">Náhodné fotografie z Instagramu od onWeekdays</string>
+	<string name="app_name">onWeekdays pro Muzei</string>
+	<string name="source_name">onWeekdays pro Muzei</string>
+	<string name="source_description">Náhodné fotografie z Instagramu od onWeekdays</string>
+
+	<string name="title_settings">Settings</string>
+	<string name="pref_wifi">Stahování pouze přes wifi</string>
+	<string name="pref_wifi_summary">Stahovat nové obrázky pouze při připojení k wifi síti</string>
+	<string name="pref_interval">Čas pro obnovení</string>
+	<string name="pref_interval_summary">Zobrazit novou fotku: %s</string>
 </resources>

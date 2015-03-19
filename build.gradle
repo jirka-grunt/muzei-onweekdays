@@ -5,7 +5,7 @@
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *     http://www.apache.org/licenses/LICENSE-2.0
+ *	 http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -15,27 +15,27 @@
  */
 
 buildscript {
-    repositories {
-        mavenCentral()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:0.11.1'
-    }
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath 'com.android.tools.build:gradle:0.11.1'
+	}
 }
 apply plugin: 'android'
 
 repositories {
-    mavenCentral()
+	mavenCentral()
 }
 
 dependencies {
-    compile 'com.squareup.retrofit:retrofit:1.8.0'
-    compile 'com.google.android.apps.muzei:muzei-api:+'
+	compile 'com.squareup.retrofit:retrofit:1.8.0'
+	compile 'com.google.android.apps.muzei:muzei-api:+'
 }
 
 android {
-    compileSdkVersion 'android-22'
-    buildToolsVersion '22.0.0'
+	compileSdkVersion 'android-22'
+	buildToolsVersion '22.0.0'
 
 	signingConfigs {
 		release {

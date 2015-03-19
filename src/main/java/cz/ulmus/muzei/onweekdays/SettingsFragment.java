@@ -1,11 +1,11 @@
 /*
- * Copyright 2014 Google Inc.
+ * Copyright 2015 Jirka Grunt
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *     http://www.apache.org/licenses/LICENSE-2.0
+ *	 http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -16,21 +16,17 @@
 
 package cz.ulmus.muzei.onweekdays;
 
-import retrofit.http.GET;
+import android.os.Bundle;
+import android.preference.PreferenceFragment;
 
-interface OnWeekdaysService {
-    @GET("/api/random.php")
-    PhotoResponse getRandomPhoto();
+public class SettingsFragment extends PreferenceFragment {
 
-    static class PhotoResponse {
-        Photo photo;
-    }
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
 
-    static class Photo {
-        String id;
-        String name;
-        String url;
-        String source;
-        String author;
-    }
+		addPreferencesFromResource(R.xml.preferences);
+	}
+
 }
+
